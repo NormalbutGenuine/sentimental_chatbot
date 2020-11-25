@@ -7,6 +7,7 @@ app = Flask(__name__)
 @app.route('/api/answer', methods=['POST'])
 def index():
     body = request.get_json()
+    print(body)
     responseBody={
         "version": "2.0",
         "template":{
@@ -19,7 +20,7 @@ def index():
             ]
         }
     }
-    print(body['userRequest']['utterance'])
+    
     return responseBody
     
 t = 1
