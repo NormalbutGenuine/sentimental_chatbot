@@ -19,6 +19,7 @@ def index():
             ]
         }
     }
+    print(body['userRequest']['utterance'])
     return responseBody
     
 t = 1
