@@ -14,7 +14,7 @@ def index():
             "outputs": [
                 {
                     "simpleText": {
-                        "text": "네 안녕하세요."
+                        "text": engine(body['userRequest']['utterance'])
                     }
                 }
             ]
