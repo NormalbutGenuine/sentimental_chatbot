@@ -4,7 +4,7 @@ from engineT import engine
 
 from flask import Flask, request, jsonify, abort
 app = Flask(__name__)
-@app.route('/answer', methods=['POST'])
+@app.route('/api/answer', methods=['POST'])
 def index():
     body = request.get_json()
     responseBody={
