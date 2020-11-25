@@ -28,7 +28,7 @@ def make_vector(tdm):
 
 def engine(query):
     komoran = Komoran()
-    model = Word2Vec.load('word2.model')
+    
 
     file_path = "감성대화말뭉치.json"
     with open(file_path, "r", encoding="utf-8") as json_file:
