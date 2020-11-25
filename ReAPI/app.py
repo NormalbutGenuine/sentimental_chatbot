@@ -13,7 +13,7 @@ def index():
             "outputs": [
                 {
                     "simpleText": {
-                        "text": engine(body['userRequest']['utterance'])
+                        "text": "네 안녕하세요."
                     }
                 }
             ]
