@@ -58,7 +58,7 @@ def engine(query):
         SS03[i] = jdic3['SS03']
 
     SSBOX = SS01+SS02+SS03
-    f = open("ratings.txt", "r", encoding="utf-8")
+    f = open("sratings.txt", "r", encoding="utf-8")
     fr = f.read()
     flr = list(fr)
     fr2 = fr.split("\t")
