@@ -63,7 +63,7 @@ def engine(query):
     flr = list(fr)
     fr2 = fr.split("\t")
     fr3 = fr2[3:len(fr2)]
-    BOW = SS01+SS02+SS03+fr3
+    BOW = SS01+fr3
     len2 = [k for k in range(0, len(BOW))]
     vecto = [v for v in range(0, len(BOW))]
 
