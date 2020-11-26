@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/api/answer', methods=['POST'])
 def index():
     body = request.get_json()
-    enginet = engineT()
+    
     k = body["userRequest"]["utterance"]
     print(k)
     responseBody={
