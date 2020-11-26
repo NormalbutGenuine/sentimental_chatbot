@@ -1,20 +1,21 @@
 import json
 import sys
 from engineT import engine
-
 from flask import Flask, request, jsonify, abort
 app = Flask(__name__)
 @app.route('/api/answer', methods=['POST'])
 def index():
     body = request.get_json()
-    print(body)
+    enginet = engineT()
+    k = body["userRequest"]["utterance"]
+    print(k)
     responseBody={
         "version": "2.0",
         "template":{
             "outputs": [
                 {
                     "simpleText": {
-                        "text": engine(body['userRequest']['utterance'])
+                        "text": engine(k)
                     }
                 }
             ]
@@ -23,7 +24,7 @@ def index():
     
     return responseBody
     
-t = 1
+# t = 1
 # while t:
 #     tok = input("- ")
 #     if tok != "종료":
